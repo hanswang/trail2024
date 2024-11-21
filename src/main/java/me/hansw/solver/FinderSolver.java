@@ -2,14 +2,14 @@ package me.hansw.solver;
 
 public class FinderSolver {
 
-    private boolean isPartOfIsland(char[][] M, int x, int y) {
+    public boolean isPartOfIsland(char[][] M, int x, int y) {
         int row = M.length;
         int col = M[0].length;
 
         return (x >= 0) && (x < row) && (y >= 0) && (y < col) && (M[x][y] == '1');
     }
 
-    private void DFS(char[][] M, int i, int j, boolean[][] visited) {
+    public void DFS(char[][] M, int i, int j, boolean[][] visited) {
         // anchor based on position coordinates i & j to recursively DFS
         visited[i][j] = true;
 
