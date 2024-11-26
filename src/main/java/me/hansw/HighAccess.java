@@ -25,7 +25,6 @@ public class HighAccess {
         }
 
         List<String> highAccess = new ArrayList<>();
-        System.out.println("grouped = " + grouped);
         for (String name : grouped.keySet()) {
             List<String> log = grouped.get(name);
             Collections.sort(log);
@@ -41,9 +40,6 @@ public class HighAccess {
                         break;
                     }
                 }
-
-                System.out.println("logCount = " + logCount);
-                System.out.println("time = " + time);
 
                 if (logCount > 1) {
                     highAccess.add(name);
