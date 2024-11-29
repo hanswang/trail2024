@@ -28,9 +28,21 @@ public class VoteCount {
             votingPower.compute(ballots.get(i)[0], (k, v) -> v > 0 ? v - 1 : 0);
         }
 
-        List<String> acs = counting.entrySet().stream().sorted((e1, e2) -> e2.getValue() - e1.getValue() ).map(
+        List<String> acs = counting.entrySet().stream().sorted(
+                (e1, e2) -> e2.getValue() - e1.getValue()
+        ).map(
                 e -> e.getKey()
         ).collect(Collectors.toList());
+
+//        TreeMap<Integer, List<String>> pivotCounting = new TreeMap<>();
+//        for (Map.Entry<String, Integer> count : counting.entrySet()) {
+//            pivotCounting.putIfAbsent(count.getValue(), new ArrayList<>());
+//            pivotCounting.get(count.getValue()).add(count.getKey());
+//        }
+//
+//        List<String> acs = pivotCounting.values().stream().flatMap(List::stream).collect(Collectors.toList());
+//
+//        Collections.reverse(acs);
 
         return acs;
     }
