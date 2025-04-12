@@ -1,6 +1,6 @@
-package me.hansw;
+package me.hansw.fy24;
 
-import me.hansw.solver.MergerSolver;
+import me.hansw.fy24.solver.MergerSolver;
 
 import java.util.Arrays;
 

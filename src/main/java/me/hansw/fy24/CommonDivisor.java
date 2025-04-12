@@ -1,4 +1,4 @@
-package me.hansw;
+package me.hansw.fy24;
 
 public class CommonDivisor {
     static boolean isDivisible(String divisor, String candidate) {

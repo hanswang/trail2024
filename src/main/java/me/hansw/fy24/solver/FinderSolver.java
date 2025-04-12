@@ -1,4 +1,4 @@
-package me.hansw.solver;
+package me.hansw.fy24.solver;
 
 public class FinderSolver {
 

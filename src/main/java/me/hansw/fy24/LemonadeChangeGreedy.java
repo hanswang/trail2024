@@ -1,4 +1,4 @@
-package me.hansw;
+package me.hansw.fy24;
 
 public class LemonadeChangeGreedy {
     static boolean change(int[] bills) {

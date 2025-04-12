@@ -1,6 +1,4 @@
-package me.hansw;
-
-import java.util.Arrays;
+package me.hansw.fy24;
 
 public class WordSearch {
 

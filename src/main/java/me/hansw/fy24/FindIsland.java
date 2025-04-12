@@ -1,6 +1,6 @@
-package me.hansw;
+package me.hansw.fy24;
 
-import me.hansw.solver.FinderSolver;
+import me.hansw.fy24.solver.FinderSolver;
 
 public class FindIsland {
 

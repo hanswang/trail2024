@@ -1,4 +1,4 @@
-package me.hansw;
+package me.hansw.fy24;
 
 import java.util.*;
 import java.util.stream.Collectors;

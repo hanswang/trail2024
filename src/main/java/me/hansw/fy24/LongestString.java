@@ -1,7 +1,7 @@
-package me.hansw;
+package me.hansw.fy24;
 
 
-import me.hansw.solver.StringChainSolver;
+import me.hansw.fy24.solver.StringChainSolver;
 
 
 public class LongestString {

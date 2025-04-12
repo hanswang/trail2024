@@ -1,7 +1,6 @@
-package me.hansw;
+package me.hansw.fy24;
 
-import me.hansw.solver.AnagramSolver;
-import me.hansw.solver.MergerSolver;
+import me.hansw.fy24.solver.AnagramSolver;
 
 import java.util.Arrays;
 
