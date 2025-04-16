@@ -24,7 +24,7 @@ public class T1450BusyStudent {
     static int checkStudentNumber(int[] startTime, int[] endTime, int query) {
         List<Student> students = IntStream.range(0, startTime.length).boxed().map(i -> new Student(startTime[i], endTime[i])).toList();
 
-        return (int)students.stream().filter(s -> s.start < query && s.end > query).map(s -> {
+        return (int)students.stream().filter(s -> s.start <= query && s.end >= query).map(s -> {
             System.out.println("s = " + s);
             return s;
         }).count();
