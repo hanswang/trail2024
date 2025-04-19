@@ -2,7 +2,6 @@ package me.hansw.fy25;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 class Logger {
@@ -23,11 +22,9 @@ class Logger {
             }
 
             // old message cleanup
-            Map<String, Integer> ttlTrack = this.track.entrySet().stream()
+            this.track = this.track.entrySet().stream()
                     .filter(l -> l.getValue() + 10 >= time)
                     .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
-
-            this.track = ttlTrack;
 
             return time >= lastRecordTime + 10;
         }
